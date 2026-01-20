@@ -38,4 +38,13 @@ public class service {
         }
         return null;
     }
+    void getdetails(){
+        if(ls.isEmpty()){
+            System.out.println("no machine found");
+            return;
+        }
+        for(model m:ls){
+            System.out.println("id:"+m.equipmentId+"name:"+m.equipmentname+"temp:"+m.temperatue+"pressure"+m.pressure+"runninghours:"+m.runningHours+"maintainance"+m.maintenancereq);
+        }
+    }
 }
